@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loading</title>
+	<style>
+	@keyframes rotatse{
+		0%{transform: rotate(0deg);}
+		25%{transform: rotate(45deg);}
+		50%{transform: rotate(90deg);}
+		75%{transform: rotate(135deg);}
+		100%{transform: rotate(180deg);}
+	}
+	div{
+		width: 80px;
+		height: 80px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		border:5px solid skyblue;
+		border-radius: 50%;
+		border-right:#fff;
+		border-top:#fff;
+		animation-name: rotatse;
+		animation-duration: 3s;
+		animation-timing-function: ease;
+		animation-delay: .1s;
+		animation-iteration-count: infinite;
+	}
+	</style>
+</head>
+<body>
+	<span>Loading……</span>
+	<div></div>
+</body>
+</html>
